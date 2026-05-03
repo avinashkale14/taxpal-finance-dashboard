@@ -33,12 +33,6 @@ A clean and responsive full-stack web application that helps users manage income
 
 ---
 
-## 📸 Preview
-
-(Add your project screenshots here)
-
----
-
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository:
