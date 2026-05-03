@@ -19,20 +19,14 @@ const app = express();
 // ✅ Proper CORS (NO crash)
 const cors = require("cors");
 
+const cors = require("cors");
+
+const app = express();
+
+// ✅ SIMPLE & SAFE
 app.use(cors());
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-  })
-);
+app.use(express.json());
 
 const path = require("path");
 
