@@ -1,34 +1,31 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
+// Routes
 const authRoutes = require("./routes/auth.routes");
 const transactionRoutes = require("./routes/transaction.routes");
 const dashboardRoutes = require("./routes/dashboard.routes");
 const budgetRoutes = require("./routes/budget.routes");
-const errorMiddleware = require("./middlewares/error.middleware");
-
 const categoryRoutes = require("./routes/category.routes");
 const analyticsRoutes = require("./routes/analytics.routes");
 const taxRoutes = require("./routes/tax.routes");
 const reportRoutes = require("./routes/report.routes");
 const deadlineRoutes = require("./routes/deadline.routes");
 
-const app = express();
+// Middleware
+const errorMiddleware = require("./middlewares/error.middleware");
 
-// ✅ Proper CORS (NO crash)
+const app = express();  // ✅ ONLY ONE
 
-const app = express();
-
-// ✅ SIMPLE & SAFE
+// ✅ CORS (simple & safe)
 app.use(cors());
 
+// ✅ JSON parser
 app.use(express.json());
 
-const path = require("path");
-
-app.use(express.json());
-// ✅ Serve static files from public directory
+// ✅ Static files
 app.use(express.static(path.join(__dirname, "../public")));
 
 // ✅ Test route
@@ -47,7 +44,7 @@ app.use("/api/taxes", taxRoutes);
 app.use("/api/reports", reportRoutes);
 app.use("/api/deadlines", deadlineRoutes);
 
-// ✅ Error middleware
+// ✅ Error handler
 app.use(errorMiddleware);
 
 module.exports = app;
