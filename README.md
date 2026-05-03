@@ -1,0 +1,67 @@
+# 💰 TaxPal – Personal Finance & Tax Estimator Dashboard
+
+A clean and responsive full-stack web application that helps users manage income, track expenses, and estimate taxes with an interactive analytics dashboard.
+
+---
+
+## 🚀 Live Demo
+
+🔗 https://taxpalbatch2.vercel.app/dashboard  
+
+---
+
+## ✨ Features
+
+- 💰 Track income and expense transactions  
+- 📊 Visualize financial data with analytics dashboard  
+- 🧾 Quarterly tax estimation (Q1–Q4)  
+- 📅 Manage events and reminders using calendar  
+- ⏰ Smart alerts for tax deadlines  
+- 📄 Generate financial reports  
+- 🔄 Real-time data updates  
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React  
+- 🎨 HTML5, CSS3  
+- 🧠 JavaScript (ES6+)  
+- 🟢 Node.js  
+- 🚀 Express.js  
+- 🍃 MongoDB  
+
+---
+
+## 📸 Preview
+
+(Add your project screenshots here)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   git clone https://github.com/avinashkale14/taxpal-finance-dashboard.git
+3. Open the project:
+   cd taxpal-finance-dashboard
+5. Install dependencies:
+   npm install
+7. Run Backend:
+   cd backend
+   npm start
+9. Run Frontend:
+   cd frontend
+   npm start
+
+---
+
+## 🔗 API Used
+
+- Custom REST APIs (Node.js + Express)
+
+---
+
+## 👨‍💻 Author
+
+Avinash Kale  
