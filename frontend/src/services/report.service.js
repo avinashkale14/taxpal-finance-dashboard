@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://https://taxpal-finance-dashboard.onrender.com/api/reports';
+const API_URL = 'https://taxpal-finance-dashboard.onrender.com';
 
 // Generate report (PDF or CSV)
 export const generateReport = async (reportData) => {

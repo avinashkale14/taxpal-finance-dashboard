@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://https://taxpal-finance-dashboard.onrender.com/api/deadlines';
+const API_URL = 'https://taxpal-finance-dashboard.onrender.com/api/deadlines';
 
 export const getDeadlines = async () => {
     const token = localStorage.getItem('token');
