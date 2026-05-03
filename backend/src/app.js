@@ -3,37 +3,33 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 
-// Routes
 const authRoutes = require("./routes/auth.routes");
 const transactionRoutes = require("./routes/transaction.routes");
 const dashboardRoutes = require("./routes/dashboard.routes");
 const budgetRoutes = require("./routes/budget.routes");
+const errorMiddleware = require("./middlewares/error.middleware");
+
 const categoryRoutes = require("./routes/category.routes");
 const analyticsRoutes = require("./routes/analytics.routes");
 const taxRoutes = require("./routes/tax.routes");
 const reportRoutes = require("./routes/report.routes");
 const deadlineRoutes = require("./routes/deadline.routes");
 
-// Middleware
-const errorMiddleware = require("./middlewares/error.middleware");
+const app = express();
 
-const app = express();  // ✅ ONLY ONE
-
-// ✅ CORS (simple & safe)
+// ✅ SIMPLE CORS (FINAL FIX)
 app.use(cors());
 
-// ✅ JSON parser
+// middlewares
 app.use(express.json());
-
-// ✅ Static files
 app.use(express.static(path.join(__dirname, "../public")));
 
-// ✅ Test route
+// test route
 app.get("/", (req, res) => {
   res.send("TaxPal API is running...");
 });
 
-// ✅ Routes
+// routes
 app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionRoutes);
 app.use("/api/dashboard", dashboardRoutes);
@@ -44,7 +40,7 @@ app.use("/api/taxes", taxRoutes);
 app.use("/api/reports", reportRoutes);
 app.use("/api/deadlines", deadlineRoutes);
 
-// ✅ Error handler
+// error handler
 app.use(errorMiddleware);
 
 module.exports = app;
