@@ -17,9 +17,6 @@ const deadlineRoutes = require("./routes/deadline.routes");
 const app = express();
 
 // ✅ Proper CORS (NO crash)
-const cors = require("cors");
-
-const cors = require("cors");
 
 const app = express();
 
