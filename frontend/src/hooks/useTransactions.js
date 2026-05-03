@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/transactions';
+const API_URL = 'http://https://taxpal-finance-dashboard.onrender.com/api/transactions';
 
 export function useTransactions() {
   const [transactions, setTransactions] = useState([]);

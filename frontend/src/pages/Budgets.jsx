@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet';
 import axios from 'axios';
 
 // The auth token needs to be sent with these requests
-const API_URL = 'http://localhost:5000/api/budgets';
+const API_URL = 'http://https://taxpal-finance-dashboard.onrender.com/api/budgets';
 
 export default function Budgets() {
     const [budgets, setBudgets] = useState([]);

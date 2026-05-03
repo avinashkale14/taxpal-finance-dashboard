@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/taxes';
+const API_URL = 'http://https://taxpal-finance-dashboard.onrender.com/api/taxes';
 
 // Estimate tax for a region and year based on transactions
 export const estimateTax = async (taxData) => {
