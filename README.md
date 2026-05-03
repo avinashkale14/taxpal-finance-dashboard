@@ -6,7 +6,7 @@ A clean and responsive full-stack web application that helps users manage income
 
 ## 🚀 Live Demo
 
-🔗 https://taxpalbatch2.vercel.app/dashboard  
+🔗 https://taxpalbatch2.vercel.app/  
 
 ---
 
