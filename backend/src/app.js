@@ -17,17 +17,9 @@ const deadlineRoutes = require("./routes/deadline.routes");
 const app = express();
 
 // ✅ Proper CORS (NO crash)
-const allowedOrigins = [
-  "http://localhost:5173",
-  "http://localhost:5174",
-  "http://localhost:5175",
-  "http://127.0.0.1:5173",
-  "http://127.0.0.1:5174",
-  "http://127.0.0.1:5175",
+const cors = require("cors");
 
-  // 🔥 ADD THIS
-  "https://taxpal-finance-dashboard.vercel.app"
-];
+app.use(cors());
 
 app.use(
   cors({
