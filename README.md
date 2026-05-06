@@ -1,4 +1,4 @@
-# 💰 TaxPal – Personal Finance & Tax Estimator Dashboard Application
+# 💰 TaxPal – Personal Finance & Tax Estimator Dashboard
 
 A clean and responsive full-stack web application that helps users manage income, track expenses, and estimate taxes with an interactive analytics dashboard.
 
